@@ -102,10 +102,6 @@ void recompletar()
 
 void triangulo_rectangulo()
 {
-    if (b != 0)
-    {
-        h_altura = b;
-    }
 
     if (a != 0 && b != 0 && c == 0)
     {
