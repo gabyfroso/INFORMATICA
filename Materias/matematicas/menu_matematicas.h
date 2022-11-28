@@ -53,8 +53,9 @@ void main_maths()
     {
         printf("\nTriangulo Rectangulo: \n");
         main_triangulos();
-    }
 
+        break;
+    }
     case 4:
     {
         printf("Introduzca el radio del circulo: ");
