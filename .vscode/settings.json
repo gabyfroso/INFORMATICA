@@ -5,6 +5,8 @@
         "bitset": "c",
         "algorithm": "c",
         "math.h": "c",
-        "incluyendo_todo.h": "c"
+        "incluyendo_todo.h": "c",
+        "interno.h": "c",
+        "need_calc_basica.h": "c"
     }
 }

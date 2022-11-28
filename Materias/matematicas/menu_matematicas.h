@@ -23,6 +23,7 @@ void main_maths()
     case 0:
     {
         main_calc_basica();
+        break;
     }
     case 1:
     {
