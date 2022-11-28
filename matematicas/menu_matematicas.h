@@ -6,14 +6,16 @@ int main()
     int opcion;
     float area, l1, l2, radio, h, base;
 
-    printf("=================\n");
-    printf(" 0- Calculadora Basica");
-    printf(" 1- Cuadrado\n");
-    printf(" 2- Rectangulo\n");
-    printf(" 3- Triangulo\n");
-    printf(" 4- Ciruclo\n");
-    printf("===================\n");
-    printf("Por favor introduce una opcion:");
+   printf(" \n >>Welcome to los pollo hermanos<<  \n  ");
+       printf("\n     ===================\n ");
+      printf(" \n     ===================\n ");
+    printf("  \n      1- Cuadrado\n", 163);
+    printf(" \n      2- Rectangulo\n", 163);
+    printf(" \n      3- Triangulo\n", 163);
+    printf("  \n      4- Ciruclo\n", 163);
+      printf("\n     ===================\n ");
+       printf("\n     ===================\n ");
+    printf("\n Por favor introduce una opcion:");
     scanf("%d", &opcion);
 
     switch (opcion)
