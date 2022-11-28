@@ -9,7 +9,7 @@ void main_maths()
     float area, l1, l2, radio, h, base;
 
     printf("=================\n");
-    printf(" 0- Calculadora Basica");
+    printf(" 0- Calculadora Basica\n");
     printf(" 1- Cuadrado\n");
     printf(" 2- Rectangulo\n");
     printf(" 3- Triangulo\n");
@@ -51,7 +51,7 @@ void main_maths()
 
     case 3:
     {
-        printf("Triangulo Rectangulo: ");
+        printf("\nTriangulo Rectangulo: \n");
         main_triangulos();
     }
 
