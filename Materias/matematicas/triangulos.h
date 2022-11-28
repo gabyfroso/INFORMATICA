@@ -5,7 +5,7 @@
 
 float a=0,b=0,c=0;
 float h_altura=0;
-float alpha=0,beta=0,gama=0;
+float alpha=0,beta=0;
 
 float perimetro=0,area=0;
 char mirar;
@@ -46,7 +46,11 @@ void main_triangulos()
 
     if (mirar == 'S')
     {
-        /* code */
+        for (int i = 0; i < 9; i++)
+        {
+            printf("%s", demostrative[i]);
+        }
+        
     }
 
     printf("Recuerda poner 0 en el que no sepas, y en grados los de los extremos\n");
@@ -109,14 +113,17 @@ void main_triangulos()
 
 void recompletar()
 {
-    triangulo_rectangulo();
+    for (int i = 0; i < 5; i++)
+    {
+        triangulo_rectangulo();
+    }
 }
 
 void triangulo_rectangulo()
 {
-    if (h_altura != 0)
+    if (b != 0)
     {
-        b = h_altura;
+        h_altura = b;
     }
 
     if (a != 0 && b != 0)
