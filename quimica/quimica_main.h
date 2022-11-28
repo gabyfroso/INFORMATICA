@@ -195,9 +195,9 @@ void concentracion_OH()
   printf("\t\t Cálculo de la concentración de [oH-]");
   printf("\n Introdusca el valor del poH");
   scanf("%f", &val_pOH);
-  pow(10, -1 * val_pOH);
-  printf(" =%d", coH);
-  printf("\n\nResultado: %f ^ %f = %f\n", base, val_pOH, coH);
+  coH= pow(10, -1 * val_pOH);
+ 
+  printf("\n\n La concentración es de [oH]es: %f \n" , coH);
 }
 void concentracion_H()
 {
@@ -206,7 +206,7 @@ void concentracion_H()
   printf("\t\t Cálculo de la concentración de [oH-]");
   printf("\n Introdusca el valor del pH");
   scanf("%f", &val_pH);
-  pow(10, -1 * val_pH);
-  printf(" =%d", cH);
-  printf("\n\nResultado: %f ^ %f = %f\n", base, pH, cH);
+  cH= pow(10, -1 * val_pH);
+
+  printf("\n\nLa concentración es [H]:%f ", cH);
 }
