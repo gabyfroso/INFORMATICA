@@ -2,7 +2,7 @@
 #include "need_quimica.h"
 
 int n, opcion, op1;
-float pv = 0, x2, dpv, dtc, ke, kc, m, dte, posmo, t, molar, val_pH, val_pOH, cH, coH, num, w, q, dU, pre, vol, base;
+float pv = 0, x2, dpv, dtc, ke, kc, m, dte, posmo, t, molar, val_pH, val_pOH, cH, coH, w, q, dU, pre, vol, base;
 
 void main_quimica()
 {

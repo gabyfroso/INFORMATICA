@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ratio": "c",
+        "string.h": "c",
+        "bitset": "c",
+        "algorithm": "c"
+    }
+}

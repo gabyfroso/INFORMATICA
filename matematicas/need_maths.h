@@ -17,10 +17,11 @@ void figuras_geometricas();
 void main_triangulos();
 void recompletar();
 void triangulo_rectangulo();
-void triangulo_isoscel();
 void grafico();
 
 
 #include "figuras_geometricas.h"
-#include "triangulos/triangulos.h"
 #include "menu_matematicas.h"
+
+#include "calc_basica/need_calc_basica.h"
+#include "triangulos/triangulos.h"

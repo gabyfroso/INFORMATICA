@@ -8,6 +8,7 @@ float h_altura=0;
 float alpha=0,beta=0,gama=0;
 
 float perimetro=0,area=0;
+char mirar;
 
 /////////////////////////////////////////////////////////
 //        D  E    U  S  O    G  E  N  E  R  A  L       //

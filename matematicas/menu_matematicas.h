@@ -7,6 +7,7 @@ int main()
     float area, l1, l2, radio, h, base;
 
     printf("=================\n");
+    printf(" 0- Calculadora Basica");
     printf(" 1- Cuadrado\n");
     printf(" 2- Rectangulo\n");
     printf(" 3- Triangulo\n");
@@ -17,6 +18,10 @@ int main()
 
     switch (opcion)
     {
+    case 0:
+    {
+        main_calc_basica();
+    }
     case 1:
     {
         printf("Introduzca el lado de cuadrado: ");
@@ -44,16 +49,8 @@ int main()
 
     case 3:
     {
-        printf("Introduzca la base del Rectangulo: ");
-        scanf("%f", &base);
-
-        printf("Introduzca la altura de Rectangulo: ");
-        scanf("%f", &h);
-
-        area = (base * h) / 2;
-        printf("El area es de: %f", area);
-
-        break;
+        printf("Triangulo Rectangulo: ");
+        main_triangulos();
     }
 
     case 4:
