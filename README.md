@@ -1,4 +1,4 @@
 # INFORMATICA
  UwU
  
- G: Comprobando
+ G: Comprobar
