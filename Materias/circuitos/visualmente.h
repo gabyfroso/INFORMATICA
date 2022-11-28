@@ -42,11 +42,12 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
 }
 
 void visualmente_void_SerieResistor(float data_intensidad, float data_tension, float data_resistencia)
-{
-    gcvt(data_resistencia, 6, vis_buf);
-    gcvt(data_tension, 6, vis_buf2);
+{   
+    gcvt(data_resistencia, 11, vis_buf);
 
     printf("\n  |   I = %f", data_intensidad);
+    printf("\n  |   V = %f", data_tension);
+    printf("\n  |   R = %f", data_resistencia);
     printf("\n|¯¯¯|\n");
     printf("| R |  V");
     for (int i = 0; i < strlen(vis_buf); i++)
@@ -62,6 +63,7 @@ void visualmente_void_SerieResistor(float data_intensidad, float data_tension, f
     printf("\n  |  ");
 
     memset(vis_buf, 0, sizeof(vis_buf));
+    memset(vis_buf, 0, sizeof(vis_buf2));
 }
 
 // char x[20] = "VALENTINE"
