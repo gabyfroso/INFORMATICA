@@ -20,8 +20,7 @@ void triangulo_rectangulo();
 void grafico();
 
 
-#include "figuras_geometricas.h"
 #include "menu_matematicas.h"
 
 #include "calc_basica/need_calc_basica.h"
-#include "triangulos/triangulos.h"
+#include "triangulos.h"

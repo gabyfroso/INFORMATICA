@@ -3,6 +3,8 @@
         "ratio": "c",
         "string.h": "c",
         "bitset": "c",
-        "algorithm": "c"
+        "algorithm": "c",
+        "math.h": "c",
+        "incluyendo_todo.h": "c"
     }
 }

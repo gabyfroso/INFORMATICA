@@ -9,7 +9,7 @@ void leer_todo(char *x[], int longo);
 
 const char *menu_inicio[] =
 {
-    "Circuitos","Quimica", "Matematicas","Fisica"
+    "Circuitos","Quimica", "Matematicas"
 };
 
 int ir_al;
@@ -19,7 +19,7 @@ int ir_al;
 ////////////////////////////////////////
 int main(int argc, char const *argv[])
 {
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 2; i++)
     {
         printf("%d - %s\n", i+1, menu_inicio[i]);
     }
@@ -36,10 +36,7 @@ int main(int argc, char const *argv[])
         main_quimica();
         break;
     case 3:
-        printf(" Esperando ");
-        break;
-    case 4:
-        printf(" Esperando ");
+        main_maths();
         break;
     default:
         break;
