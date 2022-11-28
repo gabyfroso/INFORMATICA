@@ -1,7 +1,9 @@
+#pragma once
 #include <stdio.h>
 #include "need_maths.h"
 
-int main()
+void main_calc_basica();
+void main_maths()
 {
     int opcion;
     float area, l1, l2, radio, h, base;

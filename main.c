@@ -17,9 +17,9 @@ int ir_al;
 ////////////////////////////////////////
 //                MAIN                //
 ////////////////////////////////////////
-int main(int argc, char const *argv[])
+void main(int argc, char const *argv[])
 {
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         printf("%d - %s\n", i+1, menu_inicio[i]);
     }
@@ -43,7 +43,6 @@ int main(int argc, char const *argv[])
     }
     
     printf("\n\n");
-    return 0;
 }
 
 
