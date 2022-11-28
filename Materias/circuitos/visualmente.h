@@ -2,7 +2,7 @@
 #include "need_circuitos.h"
 
 char partir_punto= 'F';
-char vis_buf[100];
+char vis_buf[100], vis_buf2[100];
 
 void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension, float data_resistencia)
 {    
@@ -43,14 +43,15 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
 
 void visualmente_void_SerieResistor(float data_intensidad, float data_tension, float data_resistencia)
 {
-    gcvt(data_resistencia, 7, vis_buf);
+    gcvt(data_resistencia, 6, vis_buf);
+    gcvt(data_tension, 6, vis_buf2);
 
-    printf("\n  |  ");
+    printf("\n  |   I = %f", data_intensidad);
     printf("\n|¯¯¯|\n");
-    printf("| R |");
+    printf("| R |  V");
     for (int i = 0; i < strlen(vis_buf); i++)
     {
-        printf("\n| %c |", vis_buf[i]);
+        printf("\n| %c |  %c", vis_buf[i], vis_buf2[i]);
     }
     for (int i = 0; i < 8-strlen(vis_buf); i++)
     {
