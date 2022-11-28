@@ -153,6 +153,7 @@ void equilibrio_ionico()
       concentracion_OH();
     case 4:
       concentracion_H();
+        break;
     default:
       printf("\t\t ERROR OPCIÓN INGRESADA INCORRECTA\t\t");
     }
