@@ -9,11 +9,13 @@ void main_calc_basica()
     char ejecucion;
 
     printf("ingresar la ecuacion\nrecordar solo usar 2 numeros (pueden ser float)\n");
+    printf("\nno usar espacios, por favor\n");
     scanf("%s", &char_ingresado);
 
     thisis_main_return(char_ingresado, valor1, valor2, ejecucion);
 
-    
+    printf("\n%f %c %f\nR= %f",valor1,ejecucion,valor2, Resultado);
+
 
     if (ejecucion == '+')
     {
