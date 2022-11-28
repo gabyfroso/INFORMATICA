@@ -3,11 +3,10 @@
 #include <math.h>
 #include "need_maths.h"
 
-float a=0,b=0,c=0;
-float h_altura=0;
-float alpha=0,beta=0;
+float a = 0, b = 0, c = 0;
+float alpha = 0, beta = 0;
 
-float perimetro=0,area=0;
+float perimetro = 0, area = 0;
 char mirar;
 
 /////////////////////////////////////////////////////////
@@ -25,16 +24,6 @@ char demostrative[9][200] = {
     "-------------",
     "        a     \n\n"};
 
-void mostrar_todo()
-{
-    printf("/|\n--\n");
-
-    printf("valor de a= %f\nvalor de b=%f\nHipotenusa=%f", a, b, c);
-    printf("\nAlpha= %.5f\nBeta= %.5f\n", de_rad_a_grados(alpha), de_rad_a_grados(beta));
-
-    printf("\n\nArea= %f\nPerimetro= %f", area, perimetro);
-}
-
 ////////
 // 1- Triangulo rectangulo
 // SOH CAH TOA
@@ -48,12 +37,11 @@ void main_triangulos()
     {
         for (int i = 0; i < 9; i++)
         {
-            printf("%s", demostrative[i]);
+            printf("\n%s", demostrative[i]);
         }
-        
     }
 
-    printf("Recuerda poner 0 en el que no sepas, y en grados los de los extremos\n");
+    printf("\nRecuerda poner 0 en el que no sepas, y en grados los de los extremos\n");
 
     printf("\nValor de:");
     printf("\na: ");
@@ -70,22 +58,10 @@ void main_triangulos()
     {
         printf("\nValor de:");
         printf("\nc: ");
-        scanf("%f", &b);
+        scanf("%f", &c);
         printf("\n");
     }
     recompletar();
-    // fin basicos
-
-    if (h_altura == 0)
-    {
-        printf("\nValor de:");
-        printf("\nH: ");
-        scanf("%f", &h_altura);
-        printf("\n");
-    }
-    recompletar();
-
-    // dependientes
 
     if (alpha == 0)
     {
@@ -108,7 +84,12 @@ void main_triangulos()
 
     printf("\n");
 
-    mostrar_todo(1);
+    printf("/|\n");
+
+    printf("valor de a= %f\nvalor de b=%f\nHipotenusa=%f", a, b, c);
+    printf("\nAlpha= %.5f\nBeta= %.5f\n", de_rad_a_grados(alpha), de_rad_a_grados(beta));
+
+    printf("\n\n Area= %f\n Perimetro= %f", area, perimetro);
 }
 
 void recompletar()
@@ -130,7 +111,7 @@ void triangulo_rectangulo()
     {
         c = pow(pow(a, 2) + pow(b, 2), 1 / 2);
     }
-    if (c != 0 && b != 0&& a == 0)
+    if (c != 0 && b != 0 && a == 0)
     {
         a = pow(pow(b, 2) - pow(c, 2), 1 / 2);
     }
@@ -192,15 +173,6 @@ void triangulo_rectangulo()
         perimetro = a + b + c;
         area = a * b / 2;
     }
-}
-
-void grafico()
-{
-    for (int i = 0; i < 9; i++)
-    {
-        printf("\n%s", demostrative[i]);
-    }
-    printf("\n");
 }
 
 float de_rad_a_grados(float valor)
