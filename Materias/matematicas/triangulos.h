@@ -29,7 +29,7 @@ void mostrar_todo()
 {
     printf("/|\n--\n");
 
-    printf("a= %f\nb=%f\nHipotenusa=%f", a, b, c);
+    printf("valor de a= %f\nvalor de b=%f\nHipotenusa=%f", a, b, c);
     printf("\nAlpha= %.5f\nBeta= %.5f\n", de_rad_a_grados(alpha), de_rad_a_grados(beta));
 
     printf("\n\nArea= %f\nPerimetro= %f", area, perimetro);
@@ -44,7 +44,7 @@ void main_triangulos()
     printf("¿desea ver una demostracion del triangulo?\n(S/N)");
     scanf("%s", &mirar);
 
-    if (mirar == 'S')
+    if (mirar == 'S' || mirar == 's')
     {
         for (int i = 0; i < 9; i++)
         {
@@ -126,62 +126,62 @@ void triangulo_rectangulo()
         h_altura = b;
     }
 
-    if (a != 0 && b != 0)
+    if (a != 0 && b != 0 && c == 0)
     {
         c = pow(pow(a, 2) + pow(b, 2), 1 / 2);
     }
-    if (c != 0 && b != 0)
+    if (c != 0 && b != 0&& a == 0)
     {
         a = pow(pow(b, 2) - pow(c, 2), 1 / 2);
     }
-    if (c != 0 && a != 0)
+    if (c != 0 && a != 0 && b == 0)
     {
         b = pow(pow(a, 2) - pow(c, 2), 1 / 2);
     }
 
-    if (b != 0 && c != 0)
+    if (b != 0 && c != 0 && alpha == 0)
     {
         alpha = asin(b / c);
     }
-    if (a != 0 && c != 0)
+    if (a != 0 && c != 0 && alpha == 0)
     {
         alpha = acos(a / c);
     }
-    if (b != 0 && c != 0)
+    if (b != 0 && c != 0 && alpha == 0)
     {
         alpha = atan(b / a);
     }
 
-    if (b != 0 && c != 0)
+    if (b != 0 && c != 0 && beta == 0)
     {
         beta = asin(a / c);
     }
-    if (a != 0 && c != 0)
+    if (a != 0 && c != 0 && beta == 0)
     {
         beta = acos(b / c);
     }
-    if (b != 0 && c != 0)
+    if (b != 0 && c != 0 && beta == 0)
     {
         beta = atan(a / b);
     }
 
-    if (alpha != 0 && c != 0)
+    if (alpha != 0 && c != 0 && a == 0 && b == 0)
     {
         b = sin(alpha) * c;
         a = cos(alpha) * c;
     }
-    if (alpha != 0 && b != 0)
+    if (alpha != 0 && b != 0 && a == 0 && c == 0)
     {
         c = b / sin(alpha);
         a = b / tan(alpha);
     }
 
-    if (beta != 0 && a != 0)
+    if (beta != 0 && a != 0 && c == 0 && b == 0)
     {
         b = cos(beta) * c;
         c = a / sin(beta);
     }
-    if (beta != 0 && b != 0)
+    if (beta != 0 && b != 0 && a == 0 && c == 0)
     {
         c = b / cos(beta);
         a = tan(beta) * b;
