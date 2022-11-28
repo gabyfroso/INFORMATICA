@@ -33,6 +33,10 @@ void main_circuitos()
         circuitos_escaneo();
         circuitos_enSerie();
         circuitos_say_resultados();
+
+        printf("\nGraficos\n");
+        visualmente_void_SerieResistor(I,V,R);
+        visualmente_void_SerieResistor(I2,V2,R2);
         break;
     case 2:
 
@@ -41,6 +45,9 @@ void main_circuitos()
         circuitos_escaneo();
         circuitos_enParalelo();
         circuitos_say_resultados();
+        printf("\nGraficos\n");
+        visualmente_void_ParaleloResistor(I,V,R);
+        visualmente_void_ParaleloResistor(I2,V2,R2);
         break;
     case 3:
 
@@ -50,6 +57,9 @@ void main_circuitos()
         printf("\nNo existe, finalizando...");
         break;
     }
+
+    printf("\n\nResultado\n");
+    visualmente_void_SerieResistor(Ir, Vr, Rr);
 }
 
 // Ley Ohm, la intensidad es proporcional a la tensión, e inversamente proporcional a la resistencia
@@ -276,7 +286,11 @@ void circuitos_say_resultados()
     printf("\nI2 = %f", I2);
     printf("\nR2 = %f", R2);
 
-    printf("\n\n");
+    printf("\n");
 
-    visualmente_void_SerieResistor(Ir, Vr, Rr);
+    printf("\nVR = %f", Vr);
+    printf("\nIR = %f", Ir);
+    printf("\nRR = %f", Rr);
+
+    printf("\n\n");
 }

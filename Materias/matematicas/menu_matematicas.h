@@ -69,6 +69,6 @@ void main_maths()
     }
 
     default:
-        printf("ERROR: AGREGA BIEN NO TE CUESTA NADA");
+        printf("ERROR: no fue valido");
     }
 }
