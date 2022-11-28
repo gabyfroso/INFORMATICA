@@ -102,18 +102,21 @@ void recompletar()
 
 void triangulo_rectangulo()
 {
-
-    if (a != 0 && b != 0 && c == 0)
-    {
-        c = pow(pow(a, 2) + pow(b, 2), 1 / 2);
-    }
+    float temp;
     if (c != 0 && b != 0 && a == 0)
     {
-        a = pow(pow(b, 2) - pow(c, 2), 1 / 2);
+        temp = pow(b, 2) - pow(c, 2);
+        a = sqrt(temp);
     }
     if (c != 0 && a != 0 && b == 0)
     {
-        b = pow(pow(a, 2) - pow(c, 2), 1 / 2);
+        temp= pow(a, 2) - pow(c, 2);
+        b = sqrt(temp);
+    }
+    if (a != 0 && b != 0 && c == 0)
+    {
+        temp=pow(a, 2) + pow(b, 2);
+        c = sqrt(temp);
     }
 
     if (b != 0 && c != 0 && alpha == 0)
