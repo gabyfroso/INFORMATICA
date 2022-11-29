@@ -10,6 +10,7 @@ void main_maths()
 
    printf(" \n >>Welcome to los pollo hermanos<<  \n  ");
        printf("\n     ===================\n ");
+       printf("\n   0- Calculadora Basica\n");
       printf(" \n     ===================\n \n");
     printf("  \n      1- Cuadrado\n", 163);
     printf(" \n      2- Rectangulo\n", 163);

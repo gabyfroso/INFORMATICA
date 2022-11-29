@@ -28,11 +28,11 @@ void main_calc_basica()
     {
         printf("Resultado: %f",valor1 - valor2);
     }
-    if (ejecucion == 'x')
+    if (ejecucion == 'x' || ejecucion == '*')
     {
         printf("Resultado: %f", valor1 * valor2);
     }
-    if (ejecucion == 'd')
+    if (ejecucion == 'd' || ejecucion == '/')
     {
         if (valor2 != 0)
         {

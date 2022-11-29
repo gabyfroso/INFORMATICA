@@ -42,6 +42,7 @@ void main(int argc, char const *argv[])
         break;
     }
     
+    getch();
     printf("\n\n");
 }
 

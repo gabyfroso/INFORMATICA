@@ -43,7 +43,8 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
 
 void visualmente_void_SerieResistor(float data_intensidad, float data_tension, float data_resistencia)
 {   
-    gcvt(data_resistencia, 11, vis_buf);
+    vis_buf = (char)data_resistencia;
+    vis_buf2 = (char)data_tension;
 
     printf("\n  |   I = %f", data_intensidad);
     printf("\n  |   V = %f", data_tension);
