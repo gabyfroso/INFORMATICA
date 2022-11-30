@@ -8,12 +8,13 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
 {    
     gcvt(data_resistencia, 7, vis_buf);
 
-    int linea = strlen(vis_buf)+6;
+    int linea = strlen(vis_buf)+4;
 
     // DEl dibujo
     //         V=         .
     
-    printf("\n         V= %f", data_tension);
+    printf("\n         V= %.4f", data_tension);
+    printf("\n         I= %.4f", data_intensidad);
     printf("\n      ");
 
     //  ____________
@@ -24,7 +25,7 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
     }
 
     //---| R=       |---
-    printf("\n  ---| R= %.6f", data_resistencia);
+    printf("\n  ---| R= %.5f", data_resistencia);
     for (int i = 0; i < linea-5; i++)
     {
         printf(" ");
@@ -43,12 +44,10 @@ void visualmente_void_ParaleloResistor(float data_intensidad, float data_tension
 
 void visualmente_void_SerieResistor(float data_intensidad, float data_tension, float data_resistencia)
 {   
-    vis_buf = (char)data_resistencia;
-    vis_buf2 = (char)data_tension;
+    gcvt(data_resistencia, 7, vis_buf);
+    gcvt(data_tension, strlen(vis_buf), vis_buf2);
 
-    printf("\n  |   I = %f", data_intensidad);
-    printf("\n  |   V = %f", data_tension);
-    printf("\n  |   R = %f", data_resistencia);
+    printf("\n  |   I = %.4f", data_intensidad);
     printf("\n|¯¯¯|\n");
     printf("| R |  V");
     for (int i = 0; i < strlen(vis_buf); i++)
@@ -66,8 +65,3 @@ void visualmente_void_SerieResistor(float data_intensidad, float data_tension, f
     memset(vis_buf, 0, sizeof(vis_buf));
     memset(vis_buf, 0, sizeof(vis_buf2));
 }
-
-// char x[20] = "VALENTINE"
-// strlen x == 9
-
-// char x[i] == "V"
