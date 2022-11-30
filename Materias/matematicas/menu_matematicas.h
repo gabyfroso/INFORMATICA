@@ -58,6 +58,7 @@ void main_maths()
 
     case 3:
     {
+        printf("\n\n\n\n\n");
         printf("\nTriangulo Rectangulo: \n");
         main_triangulos();
 

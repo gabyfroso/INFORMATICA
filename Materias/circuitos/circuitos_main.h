@@ -13,6 +13,7 @@ float Vr = 0, Ir = 0, Rr = 0;
 /// @brief El mismisimo infierno
 void main_circuitos()
 {
+    printf("\n             d8b                          d8b 888                     \n         8P                            88856                     \n                                          88                     \n  d8888b 888 888d888  d8888b 888  888 888 888888  d88b    d8888b  \nd88P     888 888P   d88P     888  888 888 888   d88  88b 88K      \n888      888 888    888      888  888 888 888   888  888  Y8888b  \nY88b     888 888    Y88b     Y88b 888 888 Y88b  Y88. 88P      X88 \n  Y8888P 888 888      Y8888P   Y88888 888   Y888  Y88P    88888P   \n ");
 
     printf("¿con que tipo de circuitos se presenta?\n");
 
