@@ -6,6 +6,7 @@ float pv = 0, x2, dpv, dtc, ke, kc, m, dte, posmo, t, molar, val_pH, val_pOH, cH
 
 void main_quimica()
 {
+  printf(" .d88888b.           d8b               d8b                   \nd88P   Y88b          Y8P               Y8P                   \n888     888                                                  \n888     888 888  888 888 88888b d88b   888   d8888b  8888b.  \n888     888 888  888 888 888  888  88b 888 d88P          88b \n888 Y8b 888 888  888 888 888  888  888 888 888       d888888 \nY88b.Y8b88P Y88b 888 888 888  888  888 888 Y88b     888  888 \n  Y888888     Y88888 888 888  888  888 888   Y8888P  Y888888 \n       8b                                                   \n                                                             \n                                                             ");
   do
   {
     printf("\n   1. Propiedades coligativas .");
